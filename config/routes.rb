@@ -1,4 +1,6 @@
 Ponona::Application.routes.draw do
+ root :to => 's_pages#index'
+  get "s_pages/about"
   resources :users
 
   # The priority is based upon order of creation: first created -> highest priority.
